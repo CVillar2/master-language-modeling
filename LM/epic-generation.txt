@@ -1,0 +1,21 @@
+
+3-GRAM MODEL
+GENERATE MAX 100 WORDS MOST LIKELY
+I am pleased to be back in Australia and all those who have been able to see the truth of that.        
+
+GENERATE MAX 100 SAMPLING
+Your enduring ties to the work of this great country.
+
+PERPLEXITY
+4.74362045025677
+
+
+4-GRAM MODEL
+GENERATE MAX 100 WORDS MOST LIKELY
+I am pleased to be here with you once again at the January meeting.
+
+GENERATE MAX 100 SAMPLING
+The importance of local communities is something which I hope will continue to deepen, and to prosper. 
+
+PERPLEXITY
+4.450431814569175

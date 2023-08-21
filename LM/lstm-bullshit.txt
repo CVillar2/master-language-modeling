@@ -1,0 +1,76 @@
+LM git:(main) ✗ python3 toyLM_LSTM.py
+2023-05-01 22:58:52.404580: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+index('<EOS>') = 3
+The Queen's messages to those celebrating their 90th birthdays on 21 April
+ eeeooosss
+[2, 182, 1000, 6, 40, 585, 42, 2095, 2096, 22, 1166, 531, 3]
+[[2], [2, 182], [2, 182, 1000], [2, 182, 1000, 6], [2, 182, 1000, 6, 40], [2, 182, 1000, 6, 40, 585], [2, 182, 1000, 6, 40, 585, 42], [2, 182, 1000, 6, 40, 585, 42, 2095], [2, 182, 1000, 6, 40, 585, 42, 2095, 2096], [2, 182, 1000, 6, 40, 585, 42, 2095, 2096, 22]]
+[2, 182, 1000]
+6
+[   0    0    0    0    0    0    0    2  182 1000]
+[0. 0. 0. ... 0. 0. 0.]
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ embedding (Embedding)       (None, None, 64)          359424    
+                                                                 
+ lstm (LSTM)                 (None, 128)               98816     
+                                                                 
+ dense (Dense)               (None, 5616)              724464    
+                                                                 
+=================================================================
+Total params: 1,182,704
+Trainable params: 1,182,704
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/20
+216/216 [==============================] - 22s 81ms/step - loss: 6.9648 - accuracy: 0.0578 
+Epoch 2/20
+216/216 [==============================] - 15s 68ms/step - loss: 6.3809 - accuracy: 0.0721
+Epoch 3/20
+216/216 [==============================] - 17s 77ms/step - loss: 6.1693 - accuracy: 0.0964
+Epoch 4/20
+216/216 [==============================] - 17s 76ms/step - loss: 6.0000 - accuracy: 0.1086
+Epoch 5/20
+216/216 [==============================] - 14s 65ms/step - loss: 5.8577 - accuracy: 0.1194
+Epoch 6/20
+216/216 [==============================] - 14s 64ms/step - loss: 5.7294 - accuracy: 0.1337
+Epoch 7/20
+216/216 [==============================] - 15s 71ms/step - loss: 5.6151 - accuracy: 0.1435
+Epoch 8/20
+216/216 [==============================] - 15s 67ms/step - loss: 5.5130 - accuracy: 0.1544
+Epoch 9/20
+216/216 [==============================] - 15s 70ms/step - loss: 5.4208 - accuracy: 0.1621
+Epoch 10/20
+216/216 [==============================] - 17s 77ms/step - loss: 5.3318 - accuracy: 0.1705
+Epoch 11/20
+216/216 [==============================] - 15s 72ms/step - loss: 5.2504 - accuracy: 0.1769
+Epoch 12/20
+216/216 [==============================] - 15s 68ms/step - loss: 5.1668 - accuracy: 0.1829
+Epoch 13/20
+216/216 [==============================] - 15s 69ms/step - loss: 5.0866 - accuracy: 0.1889
+Epoch 14/20
+216/216 [==============================] - 15s 68ms/step - loss: 5.0069 - accuracy: 0.1944
+Epoch 15/20
+216/216 [==============================] - 16s 73ms/step - loss: 4.9308 - accuracy: 0.1994
+Epoch 16/20
+216/216 [==============================] - 15s 67ms/step - loss: 4.8532 - accuracy: 0.2045
+Epoch 17/20
+216/216 [==============================] - 15s 68ms/step - loss: 4.7764 - accuracy: 0.2107
+Epoch 18/20
+216/216 [==============================] - 15s 68ms/step - loss: 4.7023 - accuracy: 0.2158
+Epoch 19/20
+216/216 [==============================] - 15s 69ms/step - loss: 4.6292 - accuracy: 0.2203
+Epoch 20/20
+216/216 [==============================] - 15s 67ms/step - loss: 4.5576 - accuracy: 0.2255
+the quick brown i am delighted to be
+GEN max prob
+i am pleased to be back in the commonwealth
+GEN sampled
+this is taught this new when that enthusiasm of france with so society here has not possible through have a toronto forest and citizens nations at the health nations as well
+GEN sampled best 50
+it there are sure a reminder of the assembly of the commonwealth ahead there is the new sense of change and this may as well and by the queen's commonwealth
+Perplexity: 2750.8136506502433
